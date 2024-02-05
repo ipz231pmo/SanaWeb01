@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма реєстрації</title>
+</head>
+<body>
+<form method="post">
+    <table>
+        <tr>
+            <td>Логін:</td>
+            <td><input type="text" name="login"></td>
+        </tr>
+        <tr>
+            <td>Пароль:</td>
+            <td><input type="password" name="password"></td>
+        </tr>
+        <tr>
+            <td>Повторіть пароль:</td>
+            <td><input type="password" name="passwordAgain"></td>
+        </tr>
+        <tr>
+            <td>Стать:</td>
+            <td>
+                <label>
+                    <input type="radio" name="gender" value="male"> Чоловік
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female"> Жінка
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>Вкажіть місто:</td>
+            <td>
+                <select name="cities" multiple>
+                    <option value="zh">Житомир</option>
+                    <option value="ky">Київ</option>
+                    <option value="lv">Львів</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Інтереси:</td>
+            <td>
+                <label>
+                    <input type="checkbox" name="interests[]" value="football"> Футбол
+                </label>
+                <label>
+                    <input type="checkbox" name="interests[]" value="chess"> Шахи
+                </label>
+                <label>
+                    <input type="checkbox" name="interests[]" value="draw"> Малювання
+                </label>
+                <label>
+                    <input type="checkbox" name="interests[]" value="music"> Музика
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button>Очистити</button>
+                <input type="submit" value="Відправити">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
