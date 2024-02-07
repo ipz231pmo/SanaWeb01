@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form method="post">
+    <fieldset>
+        <legend>Contact Data</legend>
+        <table>
+            <tr>
+                <td><label for="Email">Email*:</label></td>
+                <td><input type="email" name="email" id="Email" autocomplete="off" required></td>
+            </tr>
+            <tr>
+                <td><label for="Name">Name*(3-16 letters):</label></td>
+                <td><input type="text" name="name" id="Name" value="Sa" pattern="\w{3,16}" required></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Feedback</legend>
+        <table>
+            <tr>
+                <td><label for="Date">Date:</label></td>
+                <td><input type="date" name="date" id="Date"></td>
+            </tr>
+            <tr>
+                <td><label for="Assessment">Assessment:</label></td>
+                <td>
+                    <div class="assessment">
+                        <input type="range" name="assessment" id="Assessment" min="0" max="10" step="1">
+                        <div class="marks">
+                            <div>0</div>
+                            <div>5</div>
+                            <div>10</div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Price">Price:</label></td>
+                <td><input type="number" id="Price" name="price"></td>
+            </tr>
+            <tr>
+                <td><label for="favColor">Your Favorite Color:</label></td>
+                <td><input type="color" name="favColor" id="favColor" value="#de1717"></td>
+            </tr>
+            <tr>
+                <td><label for="Time">Spent time</label></td>
+                <td><progress id="Time" max="100" value="80">80%</progress></td>
+            </tr>
+            <tr>
+                <td><label for="PlacesCount">Places Visited</label></td>
+                <td><meter min="0" max="12" low="4" high="8" optimum="10" value="10" id="PlacesCount"></meter></td>
+            </tr>
+            <tr>
+                <td><label for="Feedback">FeedBack</label></td>
+                <td>
+                    <textarea spellcheck="false" name="Feedback" id="Feedback" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="City">City</label></td>
+                <td>
+                    <select name="City" id="City">
+                        <optgroup label="Ukraine">
+                            <option value="Zh">Zhytomyr</option>
+                            <option value="Ki">Kiev</option>
+                            <option value="Lv">Lviv</option>
+                        </optgroup>
+                        <optgroup label="Poland">
+                            <option value="Wa">Warshaw</option>
+                            <option value="Lo">Lodz</option>
+                            <option value="Sh">Shtetin</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Country">Country</label></td>
+                <td>
+                    <input id="Country" list="Countries" name="Country">
+                    <datalist id="Countries">
+                        <option value="Ukraine"></option>
+                        <option value="Poland"></option>
+                        <option value="USA"></option>
+                        <option value="Dutch"></option>
+                        <option value="Deutchland"></option>
+                        <option value="English"></option>
+                        <option value="Romania"></option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>Photos</td>
+                <td>
+                    <input type="file" id="Photos" name="photos" accept="image/png, image/jpeg" multiple>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <br>
+    <table>
+        <tr>
+            <td><input type="submit" value="Submit"></td>
+            <td><button>Clear</button></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

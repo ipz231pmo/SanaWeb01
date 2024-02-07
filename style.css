@@ -1,0 +1,13 @@
+
+form {
+display: inline-block;
+}
+div.assessment {
+    display: flex;
+    flex-direction: column;
+}
+div.marks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
